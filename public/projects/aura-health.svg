@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ahBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1218"/>
+      <stop offset="100%" stop-color="#050a0f"/>
+    </linearGradient>
+    <linearGradient id="ahGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#ahBg)"/>
+  <circle cx="850" cy="250" r="320" fill="#06b6d4" opacity="0.12" filter="blur(90px)"/>
+  <circle cx="200" cy="550" r="280" fill="#10b981" opacity="0.1" filter="blur(80px)"/>
+
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="650" rx="16" fill="#0c171e" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+
+    <!-- Header bar -->
+    <rect width="1080" height="52" rx="16" fill="#11222c"/>
+    <rect y="36" width="1080" height="16" fill="#11222c"/>
+    <line x1="0" y1="52" x2="1080" y2="52" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <circle cx="28" cy="26" r="6" fill="#ef4444" opacity="0.8"/>
+    <circle cx="48" cy="26" r="6" fill="#eab308" opacity="0.8"/>
+    <circle cx="68" cy="26" r="6" fill="#22c55e" opacity="0.8"/>
+
+    <text x="110" y="32" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="700">✚ AURA HEALTH</text>
+    <text x="240" y="32" fill="#94a3b8" font-family="sans-serif" font-size="12">Patient Portal &amp; Telehealth Suite</text>
+
+    <!-- Top Stats -->
+    <g transform="translate(50, 80)">
+      <g transform="translate(0, 0)">
+        <rect width="300" height="130" rx="12" fill="#142634" stroke="rgba(255,255,255,0.08)"/>
+        <text x="25" y="35" fill="#94a3b8" font-family="sans-serif" font-size="12">UPCOMING CONSULTATION</text>
+        <text x="25" y="70" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="600">Dr. Elena Rostova</text>
+        <text x="25" y="98" fill="#38bdf8" font-family="sans-serif" font-size="12">Today at 14:30 EST • Encrypted Video</text>
+      </g>
+
+      <g transform="translate(340, 0)">
+        <rect width="300" height="130" rx="12" fill="#142634" stroke="rgba(255,255,255,0.08)"/>
+        <text x="25" y="35" fill="#94a3b8" font-family="sans-serif" font-size="12">BIOMETRIC VITALS</text>
+        <text x="25" y="70" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="700">72 BPM <tspan fill="#34d399" font-size="14">Normal</tspan></text>
+        <path d="M 25 105 Q 60 90 90 105 T 150 75 T 200 115 T 275 95" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+      </g>
+
+      <g transform="translate(680, 0)">
+        <rect width="300" height="130" rx="12" fill="#142634" stroke="rgba(255,255,255,0.08)"/>
+        <text x="25" y="35" fill="#94a3b8" font-family="sans-serif" font-size="12">HIPAA STATUS</text>
+        <text x="25" y="70" fill="#34d399" font-family="sans-serif" font-size="22" font-weight="700">100% Compliant</text>
+        <text x="25" y="98" fill="#94a3b8" font-family="sans-serif" font-size="12">End-to-end 256-bit AES encryption</text>
+      </g>
+    </g>
+
+    <!-- Calendar & Prescriptions -->
+    <g transform="translate(50, 240)">
+      <rect width="980" height="340" rx="12" fill="#12202c" stroke="rgba(255,255,255,0.06)"/>
+      <text x="30" y="40" fill="#f8fafc" font-family="sans-serif" font-size="16" font-weight="600">Care Plan &amp; Digital Prescriptions</text>
+      
+      <rect x="30" y="65" width="920" height="70" rx="8" fill="#182b3a"/>
+      <text x="50" y="105" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="600">Cardiovascular Preventive Therapy</text>
+      <text x="600" y="105" fill="#94a3b8" font-family="sans-serif" font-size="13">Refill active • 30 days left</text>
+      <rect x="830" y="85" width="100" height="32" rx="6" fill="#0891b2"/>
+      <text x="880" y="105" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">Refill Now</text>
+
+      <rect x="30" y="150" width="920" height="70" rx="8" fill="#182b3a"/>
+      <text x="50" y="190" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="600">Annual Metabolic Screening Lab Results</text>
+      <text x="600" y="190" fill="#34d399" font-family="sans-serif" font-size="13">Verified by Quest Labs</text>
+      <rect x="830" y="170" width="100" height="32" rx="6" fill="rgba(255,255,255,0.1)"/>
+      <text x="880" y="190" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">View PDF</text>
+    </g>
+  </g>
+</svg>

@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aryan — Creative Developer & Full-Stack Engineer Portfolio
 
-## Getting Started
+A premium, modern, animation-rich portfolio website crafted with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed with an editorial Awwwards-inspired aesthetic, fluid glassmorphism, responsive micro-interactions, and a clean three-section architecture.
 
-First, run the development server:
+---
+
+## 🌟 Highlights
+
+- **Three Focused Sections**:
+  1. **About** (`#about`): Dynamic hero introducing Aryan, value proposition, proven metrics, profile visual card with status pill, 4-pillar engineering philosophy, and categorized technical stack showcase.
+  2. **Work** (`#work`): Editorial project gallery, featured project spotlight, category filters (*All, SaaS, Web Apps, Business Websites, Dev Tools, E-commerce*), image hover zoom, and interactive project modal dialog with technical deliverables.
+  3. **Contact** (`#contact`): High-converting project inquiry interface with interactive project-type & budget chips, real Next.js API backend (`/api/contact`), direct email copy button with feedback, live IST clock, and social links.
+- **Dark Editorial Identity**:
+  - Obsidian backdrop (`#08090d`), ambient cursor-following glow, subtle mesh grid, and frosted glass cards.
+  - Fluid spring animations with Framer Motion that respect `prefers-reduced-motion`.
+- **Easy Maintenance**:
+  - Edit personal details, bio, and social links in [`src/data/siteConfig.ts`](file:///c:/Users/prati/OneDrive/Desktop/portfolio_new/src/data/siteConfig.ts).
+  - Add, edit, remove, or reorder projects simply by updating [`src/data/projects.ts`](file:///c:/Users/prati/OneDrive/Desktop/portfolio_new/src/data/projects.ts).
+- **Production-Ready Backend**:
+  - Real inquiry API route with strict input validation, HTTP status codes, and resilient JSON persistence in `data/inquiries.json`.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) + Custom SVG Brand Vectors
+
+---
+
+## 🚀 Getting Started
+
+### 1. Development Mode
+Run the development server locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Production Build
+Test the optimized production build:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+portfolio_new/
+├── public/
+│   ├── profile/
+│   │   └── avatar.svg          # Stylized vector developer avatar
+│   └── projects/
+│       ├── omni-metrics.svg    # SaaS analytics dashboard mockup
+│       ├── kroma-studio.svg    # E-commerce lookbook mockup
+│       ├── nexus-flow.svg      # Dev tools API workbench mockup
+│       ├── aura-health.svg     # Telehealth portal mockup
+│       ├── veloce-capital.svg  # Fintech investment hub mockup
+│       └── synthetix-ai.svg    # AI prompt lab mockup
+├── src/
+│   ├── app/
+│   │   ├── api/contact/
+│   │   │   └── route.ts        # Real backend contact handler
+│   │   ├── globals.css         # Glassmorphism utilities & theme
+│   │   ├── layout.tsx          # SEO, Open Graph & typography
+│   │   └── page.tsx            # Assembled 3-section layout
+│   ├── components/
+│   │   ├── AboutSection.tsx    # Hero, stats, approach & tech stack
+│   │   ├── BackgroundGlow.tsx  # Ambient mesh glow & cursor follower
+│   │   ├── ContactSection.tsx  # Interactive contact form & socials
+│   │   ├── Footer.tsx          # Local time clock & quick links
+│   │   ├── Icons.tsx           # GitHub, LinkedIn, Instagram, X vectors
+│   │   ├── Navbar.tsx          # Sticky glass nav & availability beacon
+│   │   ├── ProjectCard.tsx     # Hover zoom, tech tags & actions
+│   │   ├── ProjectModal.tsx    # Accessible modal for case studies
+│   │   └── WorkSection.tsx     # Filter tabs & project gallery
+│   ├── data/
+│   │   ├── projects.ts         # Central project data (Add/edit here!)
+│   │   └── siteConfig.ts       # Central personal & social details
+│   └── types/
+│       └── index.ts            # Project & Config TypeScript types
+└── data/
+    └── inquiries.json          # Received inquiries log
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✏️ Customization Guide
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Update Personal & Social Details
+Open [`src/data/siteConfig.ts`](file:///c:/Users/prati/OneDrive/Desktop/portfolio_new/src/data/siteConfig.ts) to update:
+- Your name, headline, bio, and role
+- Your email address and physical/remote location
+- Your GitHub, LinkedIn, Instagram, and X/Twitter URLs
+- Availability status and active client project capacity
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Add or Edit Projects
+Open [`src/data/projects.ts`](file:///c:/Users/prati/OneDrive/Desktop/portfolio_new/src/data/projects.ts). Each project object supports:
+
+```typescript
+{
+  id: "your-project-id",
+  title: "Your Project Title",
+  category: "SaaS" | "Web Apps" | "Business Websites" | "Dev Tools" | "E-commerce",
+  year: "2024",
+  featured: true, // Highlights the project in the top spotlight
+  image: "/projects/your-image.png", // Place image in public/projects/
+  description: "Short 1-2 sentence elevator pitch...",
+  longDescription: "Detailed case study overview...",
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+  liveUrl: "https://yourproject.com",
+  githubUrl: "https://github.com/your-username/your-repo",
+  metrics: "Sub-50ms latency • 10k users",
+  role: "Lead Full-Stack Developer",
+  deliverables: ["UI Design System", "Backend API", "Authentication"],
+}
+```
+
+### 3. Contact Form Email Delivery
+The contact form submits to [`src/app/api/contact/route.ts`](file:///c:/Users/prati/OneDrive/Desktop/portfolio_new/src/app/api/contact/route.ts). Inquiries are automatically saved into `data/inquiries.json`.
+To connect an external email delivery provider such as [Resend](https://resend.com), install `resend` and add your API key in `.env.local`:
+
+```bash
+npm install resend
+```
