@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aryan — Creative Developer & Full-Stack Engineer Portfolio
 
 A premium, modern, animation-rich portfolio website crafted with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed with an editorial Awwwards-inspired aesthetic, fluid glassmorphism, responsive micro-interactions, and a clean three-section architecture.
@@ -132,3 +133,7 @@ To connect an external email delivery provider such as [Resend](https://resend.c
 ```bash
 npm install resend
 ```
+=======
+# My_Portfolio
+A professional portfolio website showcasing my skills, projects, and experience as a Full-Stack Web Developer, with a focus on modern, responsive, and user-friendly web applications.
+>>>>>>> 0aa4b48f02724343a6ade28113e8c76404d5af3f
