@@ -33,7 +33,7 @@ export const projects: Project[] = [
     category: "Dev Tools",
     year: "2026",
     featured: false,
-    image: "/projects/bitlinks.jpeg",
+    image: "/projects/Bitlinks.jpeg",
     description:
       "Lightweight developer tool for designing, inspecting, and simulating REST & GraphQL endpoints with instant schema generation.",
     longDescription:
